@@ -925,3 +925,16 @@ body.light-theme .logo {
   padding: 5px;
   background: #fff;
 }
+
+#music-player {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background: #222;
+  color: white;
+  padding: 10px 15px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
