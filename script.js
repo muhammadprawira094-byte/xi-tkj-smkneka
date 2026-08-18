@@ -1,4 +1,6 @@
-
+window.onerror = function(msg, url, line) {
+  document.getElementById('song-title').textContent = 'Error: ' + msg + ' (line ' + line + ')';
+};
 
 var tag = document.createElement('script');
 tag.src = "https://www.youtube.com/iframe_api";
