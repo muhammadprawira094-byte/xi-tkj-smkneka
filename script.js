@@ -4,9 +4,14 @@ window.onerror = function(msg, url, line) {
 
 var tag = document.createElement('script');
 tag.src = "https://www.youtube.com/iframe_api";
+tag.onload = function() {
+  document.getElementById('song-title').textContent = 'Script YT berhasil load';
+};
+tag.onerror = function() {
+  document.getElementById('song-title').textContent = 'Gagal load script YT!';
+};
 var firstScriptTag = document.getElementsByTagName('script')[0];
 firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
-
 var player;
 function onYouTubeIframeAPIReady() {
   player = new YT.Player('yt-player', {
