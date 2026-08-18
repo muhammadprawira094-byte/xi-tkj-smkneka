@@ -1,5 +1,27 @@
 
 
+var tag = document.createElement('script');
+tag.src = "https://www.youtube.com/iframe_api";
+var firstScriptTag = document.getElementsByTagName('script')[0];
+firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+
+var player;
+function onYouTubeIframeAPIReady() {
+  player = new YT.Player('yt-player', {
+    height: '0',
+    width: '0',
+    videoId: 'dQw4w9WgXcQ',
+    events: {
+      'onReady': onPlayerReady
+    }
+  });
+}
+
+function onPlayerReady(event) {
+  document.getElementById('song-title').textContent = 'Player siap! ✅';
+}
+}
+
 const searchInput = document.getElementById('studentSearch');
 const cards = [...document.querySelectorAll('#carousel .card')];
 const memberCount = document.getElementById('memberCount');
