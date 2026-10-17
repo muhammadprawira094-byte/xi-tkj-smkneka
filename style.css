@@ -1087,3 +1087,273 @@ header p {
     font-size: .66rem;
   }
 }
+
+
+/* ===== TECH MINIMAL: kartu anggota & popup profil ===== */
+.card {
+  isolation: isolate;
+  background: linear-gradient(135deg, rgba(244,180,0,.10), transparent 42%), linear-gradient(160deg, #fff 0%, #f4f7fb 100%);
+  border: 1px solid rgba(244,180,0,.38);
+  box-shadow: 0 10px 28px rgba(4,12,26,.24), inset 0 1px 0 rgba(255,255,255,.95);
+  transition: transform .24s ease, box-shadow .24s ease, border-color .24s ease;
+}
+.card::before {
+  content: "</ TKJ >";
+  top: 34px; left: -6px;
+  color: rgba(23,43,77,.055);
+  font-size: 3.2rem; letter-spacing: -.08em;
+}
+.card::after {
+  content: "SYS / ONLINE";
+  right: 7px; bottom: 16px;
+  color: rgba(23,43,77,.34);
+  font-size: .48rem; font-weight: 900; letter-spacing: .13em;
+  transform: none;
+}
+.card:hover, .card:focus-visible {
+  transform: translateY(-7px);
+  border-color: var(--accent);
+  box-shadow: 0 18px 34px rgba(0,0,0,.25), 0 0 0 3px rgba(244,180,0,.12);
+  outline: none;
+}
+.card:focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; }
+.card .badge {
+  background: var(--navy);
+  border: 1px solid rgba(244,180,0,.45);
+  box-shadow: 0 4px 10px rgba(23,43,77,.12);
+}
+.student-number {
+  color: #9a770c; background: rgba(244,180,0,.12);
+  border: 1px solid rgba(244,180,0,.28); border-radius: 6px; padding: 4px 6px;
+}
+.avatar {
+  background: linear-gradient(135deg, #172b4d 0%, #29476f 54%, #f4b400 55%, #fff1b8 100%);
+  color: #fff; border: 3px solid #fff;
+  outline: 2px solid rgba(244,180,0,.75);
+  box-shadow: 0 8px 20px rgba(23,43,77,.2);
+}
+.card h2 { letter-spacing: -.02em; }
+.card h2::after {
+  content: ""; display: block; width: 34px; height: 3px;
+  margin: 10px auto 0; border-radius: 99px; background: var(--accent);
+}
+.student-detail-overlay {
+  padding: 18px; background: rgba(5,12,25,.78);
+  backdrop-filter: blur(10px); -webkit-backdrop-filter: blur(10px);
+}
+.student-detail {
+  max-width: 420px; padding: 24px;
+  border: 1px solid rgba(244,180,0,.45); border-radius: 22px;
+  background: radial-gradient(circle at 100% 0%, rgba(244,180,0,.12), transparent 32%), linear-gradient(155deg, var(--surface) 0%, var(--surface-soft) 100%);
+  box-shadow: 0 24px 70px rgba(0,0,0,.4), 0 0 0 5px rgba(244,180,0,.05);
+  animation: studentPopup .24s cubic-bezier(.2,.8,.2,1);
+}
+.student-detail-topline {
+  display: flex; align-items: center; justify-content: space-between; gap: 10px;
+  margin: 0 42px 14px 0; padding-bottom: 12px;
+  border-bottom: 1px solid var(--line);
+  font-family: monospace; font-size: .62rem; font-weight: 900; letter-spacing: .08em;
+}
+.detail-chip {
+  padding: 5px 8px; border-radius: 5px; color: var(--navy);
+  background: #fff1b8; border: 1px solid rgba(244,180,0,.6);
+}
+.detail-code { color: var(--muted); }
+.student-detail-close {
+  top: 16px; right: 16px; background: var(--navy); color: #fff;
+  border: 1px solid rgba(244,180,0,.6);
+  transition: transform .2s ease, background .2s ease;
+}
+.student-detail-close:hover { transform: rotate(90deg); background: #29476f; }
+.student-detail-avatar {
+  width: 96px; height: 96px; margin: 8px auto 14px;
+  outline: 3px solid var(--accent); outline-offset: 3px;
+}
+.student-detail-name { font-size: 1.35rem; letter-spacing: -.03em; }
+.student-detail-hint { margin: 0 0 16px; text-align: center; color: var(--muted); font-size: .75rem; }
+.student-detail-role {
+  background: var(--navy); border: 1px solid rgba(244,180,0,.55);
+  color: #fff; letter-spacing: .06em; text-transform: uppercase;
+}
+.student-detail-section {
+  padding: 14px 12px; margin-top: 9px;
+  border: 1px solid var(--line); border-left: 3px solid var(--accent);
+  border-radius: 10px; background: rgba(255,255,255,.55);
+}
+.student-detail-section h3 { color: var(--navy); font-size: .78rem; letter-spacing: .02em; }
+.student-detail-section p { font-size: .86rem; overflow-wrap: anywhere; }
+body.light-theme .card {
+  background: linear-gradient(135deg, rgba(244,180,0,.12), transparent 42%), linear-gradient(160deg, #fff 0%, #f4f7fb 100%);
+}
+body.light-theme .student-detail-section { background: rgba(255,255,255,.8); }
+@media (prefers-reduced-motion: reduce) {
+  .card, .student-detail-close, .student-detail { animation: none !important; transition: none !important; }
+  html { scroll-behavior: auto; }
+}
+
+/* ===== CARD POLISH: lebih ringkas dan seimbang ===== */
+.carousel {
+  align-items: stretch;
+  gap: 14px;
+  padding-top: 14px;
+  padding-bottom: 18px;
+}
+
+.card {
+  box-sizing: border-box;
+  flex: 0 0 238px;
+  height: 350px;
+  min-height: 0;
+  padding: 16px 16px 18px;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+}
+
+.card > .avatar {
+  flex: 0 0 88px;
+  width: 88px;
+  height: 88px;
+  margin: 34px auto 18px;
+  font-size: 1.45rem;
+  line-height: 1;
+  overflow: hidden;
+}
+
+.card > .avatar img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.card h2 {
+  width: 100%;
+  min-height: 2.6em;
+  margin: 0 auto 10px;
+  padding: 0 2px;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  overflow: hidden;
+  overflow-wrap: anywhere;
+  text-wrap: balance;
+  font-size: .98rem;
+  line-height: 1.32;
+}
+
+.card h2::after { margin-top: 9px; }
+
+.card blockquote {
+  margin-top: 2px;
+  font-size: .76rem;
+  line-height: 1.4;
+  overflow-wrap: anywhere;
+}
+
+.card h2 + blockquote::after {
+  margin-top: 10px;
+  padding-top: 8px;
+}
+
+.card .badge {
+  max-width: 52%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-size: .57rem;
+  padding: 5px 8px;
+}
+
+.student-number { top: 14px; left: 14px; }
+
+@media (max-width: 600px) {
+  .card {
+    flex-basis: 232px;
+    height: 330px;
+    padding: 14px 14px 16px;
+    border-radius: 20px;
+  }
+
+  .card > .avatar {
+    flex-basis: 82px;
+    width: 82px;
+    height: 82px;
+    margin-top: 32px;
+    margin-bottom: 16px;
+  }
+
+  .card h2 { font-size: .91rem; }
+  .card blockquote { font-size: .72rem; }
+}
+
+/* Card anggota: aksen navy minimalis */
+.card {
+  background: linear-gradient(145deg, #ffffff 0%, #f4f7fb 100%);
+  border-color: #dce3ed;
+}
+
+.card .avatar {
+  background: #172b4d;
+  color: #ffffff;
+  outline-color: #172b4d;
+  border-color: #ffffff;
+}
+
+.card .student-number {
+  color: #172b4d;
+}
+
+.card .badge {
+  background: #172b4d;
+  color: #ffffff;
+}
+
+.card blockquote {
+  border-left-color: #172b4d;
+}
+
+.card h2 + blockquote::after {
+  border-top-color: #dce3ed;
+  color: #667085;
+}
+
+.card::before {
+  color: rgba(23, 43, 77, 0.045);
+}
+
+.card::after {
+  color: rgba(23, 43, 77, 0.10);
+}
+/* Card Wali Kelas: aksen navy */
+.wk-avatar {
+  background: #172b4d;
+  color: #ffffff;
+  border: 2px solid #172b4d;
+}
+
+.tag {
+  color: #ffffff;
+  background: #172b4d;
+}
+
+.wk-info blockquote {
+  border-left-color: #172b4d;
+}
+
+/* Avatar popup: navy satu warna */
+.student-detail-avatar {
+  background: #172b4d !important;
+  background-image: none !important;
+}
+
+.student-detail-avatar::before,
+.student-detail-avatar::after {
+  background: #172b4d !important;
+  background-image: none !important;
+}
+/* Bingkai avatar Wali Kelas: navy */
+.wk-avatar {
+  border: 2px solid #172b4d !important;
+  outline: 2px solid #172b4d !important;
+  box-shadow: none !important;
+}
