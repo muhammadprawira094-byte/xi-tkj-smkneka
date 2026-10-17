@@ -2,9 +2,9 @@
 const dataSiswa = [
   { id: "01", name: "Ahmad Azka Aulia Fawwaz", search: "ahmad azka aulia fawwaz", avatar: '<div class="avatar">FA</div>', role: "Anggota", quote: "-", hobby: "-", about: "-" 
   },
-  { id: "02", name: "Al Amin Mukromin", search: "al amin mukromin", avatar: '<div class="avatar"><img src="images/foto4.jpg" alt="amen"></div>', role: "Anggota", quote: "-", hobby: "-", about: "-" 
+  { id: "02", name: "Al Amin Mukromin", search: "al amin mukromin", avatar: '<div class="avatar"><img src="foto4.jpg" alt="amen"></div>', role: "Anggota", quote: "-", hobby: "-", about: "-" 
   },
-  { id: "03", name: "Alfano Axila Fabio Septriaka", search: "alfano axila fabio septriaka", avatar: '<div class="avatar"><img src="images/alpan.jpg" alt="alpan"></div>', role: "Anggota", quote: "-", hobby: "-", about: "-" },
+  { id: "03", name: "Alfano Axila Fabio Septriaka", search: "alfano axila fabio septriaka", avatar: '<div class="avatar"><img src="alpan.jpg" alt="alpan"></div>', role: "Anggota", quote: "-", hobby: "-", about: "-" },
   { id: "04", name: "Alvino Andika Pratama", search: "alvino andika pratama", avatar: '<div class="avatar">AP</div>', role: "Anggota", quote: "-", hobby: "-", about: "-" },
   { id: "05", name: "Ariel Aditya Umiriansyah", search: "ariel aditya umiriansyah", avatar: '<div class="avatar">AU</div>', role: "Anggota", quote: "-", hobby: "-", about: "-" },
   { id: "06", name: "Bilal Raffi Irsyatul Firdaus Ibad", search: "bilal raffi irsyatul firdaus ibad", avatar: '<div class="avatar">BI</div>', role: "Anggota", quote: "-", hobby: "-", about: "-" },
@@ -17,10 +17,10 @@ const dataSiswa = [
   { id: "13", name: "Maulana Rifki Setiawan", search: "maulana rifki setiawan", avatar: '<div class="avatar">MS</div>', role: "Anggota", quote: "-", hobby: "-", about: "-" },
   { id: "14", name: "Mochamad Nooh Alfaridzi", search: "mochamad nooh alfaridzi", avatar: '<div class="avatar">MA</div>', role: "Anggota", quote: "-", hobby: "-", about: "-" },
   { id: "15", name: "Moh. Ibra Bima Sakti", search: "moh. ibra bima sakti", avatar: '<div class="avatar">MB</div>', role: "Ketua", quote: "-", hobby: "-", about: "-" },
-  { id: "16", name: "Mohammad Makhis Ubaidillah", search: "mohammad makhis ubaidillah", avatar: '<div class="avatar"><img src="images/makis.jpg" alt="makis"></div>', role: "Anggota", quote: "-", hobby: "-", about: "-" },
+  { id: "16", name: "Mohammad Makhis Ubaidillah", search: "mohammad makhis ubaidillah", avatar: '<div class="avatar"><img src="makis.jpg" alt="makis"></div>', role: "Anggota", quote: "-", hobby: "-", about: "-" },
   { id: "17", name: "Mohammad Priyo Budi Santoso", search: "mohammad priyo budi santoso", avatar: '<div class="avatar">MS</div>', role: "Anggota", quote: "-", hobby: "-", about: "-" },
   { id: "18", name: "Muhammad Alif Fadhil Putra", search: "muhammad alif fadhil putra", avatar: '<div class="avatar">MP</div>', role: "Anggota", quote: "-", hobby: "-", about: "-" },
-  { id: "19", name: "Muhammad Dafi Ibrahim", search: "muhammad dafi ibrahim", avatar: '<div class="avatar"><img src="images/sipon.jpg" alt="sipon"></div>', role: "Anggota", quote: "-", hobby: "-", about: "-" },
+  { id: "19", name: "Muhammad Dafi Ibrahim", search: "muhammad dafi ibrahim", avatar: '<div class="avatar"><img src="sipon.jpg" alt="sipon"></div>', role: "Anggota", quote: "-", hobby: "-", about: "-" },
   { id: "20", name: "Muhammad Fakhrul Ramadhani", search: "muhammad fakhrul ramadhani", avatar: '<div class="avatar">MR</div>', role: "Anggota", quote: "-", hobby: "-", about: "-" },
   { id: "21", name: "Muhammad Jalaluddin Prawira", search: "muhammad jalaluddin prawira", avatar: '<div class="avatar">MP</div>', role: "Anggota", quote: "-", hobby: "-", about: "-" },
   { id: "22", name: "Muhammad Rhafi Ramadhan", search: "muhammad rhafi ramadhan", avatar: '<div class="avatar">MR</div>', role: "Anggota", quote: "-", hobby: "-", about: "-" },
