@@ -1,40 +1,39 @@
-
 const dataSiswa = [
-  { id: "01", name: "Ahmad Azka Aulia Fawwaz", search: "ahmad azka aulia fawwaz", avatar: '<div class="avatar">FA</div>', role: "Anggota", quote: "-", hobby: "-", about: "-" 
+  { id: "01", name: "Ahmad Azka Aulia Fawwaz", search: "ahmad azka aulia fawwaz", avatar: '<div class="avatar"></div>', role: "Anggota", quote: "-", hobby: "-", about: "-" 
   },
   { id: "02", name: "Al Amin Mukromin", search: "al amin mukromin", avatar: '<div class="avatar"><img src="foto4.jpg" alt="amen"></div>', role: "Anggota", quote: "-", hobby: "-", about: "-" 
   },
   { id: "03", name: "Alfano Axila Fabio Septriaka", search: "alfano axila fabio septriaka", avatar: '<div class="avatar"><img src="alpan.jpg" alt="alpan"></div>', role: "Anggota", quote: "-", hobby: "-", about: "-" },
-  { id: "04", name: "Alvino Andika Pratama", search: "alvino andika pratama", avatar: '<div class="avatar">AP</div>', role: "Anggota", quote: "-", hobby: "-", about: "-" },
-  { id: "05", name: "Ariel Aditya Umiriansyah", search: "ariel aditya umiriansyah", avatar: '<div class="avatar">AU</div>', role: "Anggota", quote: "-", hobby: "-", about: "-" },
-  { id: "06", name: "Bilal Raffi Irsyatul Firdaus Ibad", search: "bilal raffi irsyatul firdaus ibad", avatar: '<div class="avatar">BI</div>', role: "Anggota", quote: "-", hobby: "-", about: "-" },
-  { id: "07", name: "Cici Yunita Sari", search: "cici yunita sari", avatar: '<div class="avatar">CS</div>', role: "Sekretaris", quote: "-", hobby: "-", about: "-" },
-  { id: "08", name: "Eka Frananda Adhitya Ramadhani", search: "eka frananda adhitya ramadhani", avatar: '<div class="avatar">ER</div>', role: "Anggota", quote: "-", hobby: "-", about: "-" },
-  { id: "09", name: "Fakhrie Zahfran Khairy", search: "fakhrie zahfran khairy", avatar: '<div class="avatar">FK</div>', role: "Wakil Ketua", quote: "-", hobby: "-", about: "-" },
-  { id: "10", name: "Galang Raya Anugrah", search: "galang raya anugrah", avatar: '<div class="avatar">GA</div>', role: "Anggota", quote: "-", hobby: "-", about: "-" },
-  { id: "11", name: "Iman Nur Rhomim Huda", search: "iman nur rhomim huda", avatar: '<div class="avatar">IH</div>', role: "Anggota", quote: "-", hobby: "-", about: "-" },
-  { id: "12", name: "Julian Gatan Putrantono", search: "julian gatan putrantono", avatar: '<div class="avatar">JP</div>', role: "Anggota", quote: "-", hobby: "-", about: "-" },
-  { id: "13", name: "Maulana Rifki Setiawan", search: "maulana rifki setiawan", avatar: '<div class="avatar">MS</div>', role: "Anggota", quote: "-", hobby: "-", about: "-" },
-  { id: "14", name: "Mochamad Nooh Alfaridzi", search: "mochamad nooh alfaridzi", avatar: '<div class="avatar">MA</div>', role: "Anggota", quote: "-", hobby: "-", about: "-" },
-  { id: "15", name: "Moh. Ibra Bima Sakti", search: "moh. ibra bima sakti", avatar: '<div class="avatar">MB</div>', role: "Ketua", quote: "-", hobby: "-", about: "-" },
+  { id: "04", name: "Alvino Andika Pratama", search: "alvino andika pratama", avatar: '<div class="avatar"></div>', role: "Anggota", quote: "-", hobby: "-", about: "-" },
+  { id: "05", name: "Ariel Aditya Umiriansyah", search: "ariel aditya umiriansyah", avatar: '<div class="avatar"></div>', role: "Anggota", quote: "-", hobby: "-", about: "-" },
+  { id: "06", name: "Bilal Raffi Irsyatul Firdaus Ibad", search: "bilal raffi irsyatul firdaus ibad", avatar: '<div class="avatar"></div>', role: "Anggota", quote: "-", hobby: "-", about: "-" },
+  { id: "07", name: "Cici Yunita Sari", search: "cici yunita sari", avatar: '<div class="avatar"></div>', role: "Sekretaris", quote: "-", hobby: "-", about: "-" },
+  { id: "08", name: "Eka Frananda Adhitya Ramadhani", search: "eka frananda adhitya ramadhani", avatar: '<div class="avatar"></div>', role: "Anggota", quote: "-", hobby: "-", about: "-" },
+  { id: "09", name: "Fakhrie Zahfran Khairy", search: "fakhrie zahfran khairy", avatar: '<div class="avatar"></div>', role: "Wakil Ketua", quote: "-", hobby: "-", about: "-" },
+  { id: "10", name: "Galang Raya Anugrah", search: "galang raya anugrah", avatar: '<div class="avatar"></div>', role: "Anggota", quote: "-", hobby: "-", about: "-" },
+  { id: "11", name: "Iman Nur Rhomim Huda", search: "iman nur rhomim huda", avatar: '<div class="avatar"></div>', role: "Anggota", quote: "-", hobby: "-", about: "-" },
+  { id: "12", name: "Julian Gatan Putrantono", search: "julian gatan putrantono", avatar: '<div class="avatar"></div>', role: "Anggota", quote: "-", hobby: "-", about: "-" },
+  { id: "13", name: "Maulana Rifki Setiawan", search: "maulana rifki setiawan", avatar: '<div class="avatar"></div>', role: "Anggota", quote: "-", hobby: "-", about: "-" },
+  { id: "14", name: "Mochamad Nooh Alfaridzi", search: "mochamad nooh alfaridzi", avatar: '<div class="avatar"></div>', role: "Anggota", quote: "-", hobby: "-", about: "-" },
+  { id: "15", name: "Moh. Ibra Bima Sakti", search: "moh. ibra bima sakti", avatar: '<div class="avatar"></div>', role: "Ketua", quote: "-", hobby: "-", about: "-" },
   { id: "16", name: "Mohammad Makhis Ubaidillah", search: "mohammad makhis ubaidillah", avatar: '<div class="avatar"><img src="makis.jpg" alt="makis"></div>', role: "Anggota", quote: "-", hobby: "-", about: "-" },
-  { id: "17", name: "Mohammad Priyo Budi Santoso", search: "mohammad priyo budi santoso", avatar: '<div class="avatar">MS</div>', role: "Anggota", quote: "-", hobby: "-", about: "-" },
-  { id: "18", name: "Muhammad Alif Fadhil Putra", search: "muhammad alif fadhil putra", avatar: '<div class="avatar">MP</div>', role: "Anggota", quote: "-", hobby: "-", about: "-" },
+  { id: "17", name: "Mohammad Priyo Budi Santoso", search: "mohammad priyo budi santoso", avatar: '<div class="avatar"></div>', role: "Anggota", quote: "-", hobby: "-", about: "-" },
+  { id: "18", name: "Muhammad Alif Fadhil Putra", search: "muhammad alif fadhil putra", avatar: '<div class="avatar"></div>', role: "Anggota", quote: "-", hobby: "-", about: "-" },
   { id: "19", name: "Muhammad Dafi Ibrahim", search: "muhammad dafi ibrahim", avatar: '<div class="avatar"><img src="sipon.jpg" alt="sipon"></div>', role: "Anggota", quote: "-", hobby: "-", about: "-" },
-  { id: "20", name: "Muhammad Fakhrul Ramadhani", search: "muhammad fakhrul ramadhani", avatar: '<div class="avatar">MR</div>', role: "Anggota", quote: "-", hobby: "-", about: "-" },
-  { id: "21", name: "Muhammad Jalaluddin Prawira", search: "muhammad jalaluddin prawira", avatar: '<div class="avatar">MP</div>', role: "Anggota", quote: "-", hobby: "-", about: "-" },
-  { id: "22", name: "Muhammad Rhafi Ramadhan", search: "muhammad rhafi ramadhan", avatar: '<div class="avatar">MR</div>', role: "Anggota", quote: "-", hobby: "-", about: "-" },
-  { id: "23", name: "Mustika Cantik Amelia", search: "mustika cantik amelia", avatar: '<div class="avatar">MA</div>', role: "Sekretaris", quote: "-", hobby: "-", about: "-" },
-  { id: "24", name: "Nizzar Mahendra", search: "nizzar mahendra", avatar: '<div class="avatar">NM</div>', role: "Anggota", quote: "-", hobby: "-", about: "-" },
-  { id: "25", name: "Noval Alsano Raditya", search: "noval alsano raditya", avatar: '<div class="avatar">NR</div>', role: "Anggota", quote: "-", hobby: "-", about: "-" },
-  { id: "26", name: "Nur Fitriyah Ningsih", search: "nur fitriyah ningsih", avatar: '<div class="avatar">NN</div>', role: "Anggota", quote: "-", hobby: "-", about: "-" },
-  { id: "27", name: "Raditya Wildan Saputra", search: "raditya wildan saputra", avatar: '<div class="avatar">RS</div>', role: "Anggota", quote: "-", hobby: "-", about: "-" },
-  { id: "28", name: "Rizky Aditya Putra Pratama", search: "rizky aditya putra pratama", avatar: '<div class="avatar">RP</div>', role: "Anggota", quote: "-", hobby: "-", about: "-" },
-  { id: "29", name: "Sahrul Zamzamana Fahmi", search: "sahrul zamzamana fahmi", avatar: '<div class="avatar">SF</div>', role: "Anggota", quote: "-", hobby: "-", about: "-" },
-  { id: "30", name: "Tita Kurnia Sari", search: "tita kurnia sari", avatar: '<div class="avatar">TS</div>', role: "Bendahara", quote: "-", hobby: "-", about: "-" },
-  { id: "31", name: "Ulung Dwi Pertiwi", search: "ulung dwi pertiwi", avatar: '<div class="avatar">UP</div>', role: "Bendahara", quote: "-", hobby: "-", about: "-" },
-  { id: "32", name: "Wildan Ahmad Robbany", search: "wildan ahmad robbany", avatar: '<div class="avatar">WR</div>', role: "Anggota", quote: "-", hobby: "-", about: "-" },
-  { id: "33", name: "Zahrotus Shita", search: "zahrotus shita", avatar: '<div class="avatar">ZS</div>', role: "Anggota", quote: "-", hobby: "-", about: "-" }
+  { id: "20", name: "Muhammad Fakhrul Ramadhani", search: "muhammad fakhrul ramadhani", avatar: '<div class="avatar"></div>', role: "Anggota", quote: "-", hobby: "-", about: "-" },
+  { id: "21", name: "Muhammad Jalaluddin Prawira", search: "muhammad jalaluddin prawira", avatar: '<div class="avatar"></div>', role: "Anggota", quote: "-", hobby: "-", about: "-" },
+  { id: "22", name: "Muhammad Rhafi Ramadhan", search: "muhammad rhafi ramadhan", avatar: '<div class="avatar"></div>', role: "Anggota", quote: "-", hobby: "-", about: "-" },
+  { id: "23", name: "Mustika Cantik Amelia", search: "mustika cantik amelia", avatar: '<div class="avatar"></div>', role: "Sekretaris", quote: "-", hobby: "-", about: "-" },
+  { id: "24", name: "Nizzar Mahendra", search: "nizzar mahendra", avatar: '<div class="avatar"></div>', role: "Anggota", quote: "-", hobby: "-", about: "-" },
+  { id: "25", name: "Noval Alsano Raditya", search: "noval alsano raditya", avatar: '<div class="avatar"></div>', role: "Anggota", quote: "-", hobby: "-", about: "-" },
+  { id: "26", name: "Nur Fitriyah Ningsih", search: "nur fitriyah ningsih", avatar: '<div class="avatar"></div>', role: "Anggota", quote: "-", hobby: "-", about: "-" },
+  { id: "27", name: "Raditya Wildan Saputra", search: "raditya wildan saputra", avatar: '<div class="avatar"></div>', role: "Anggota", quote: "-", hobby: "-", about: "-" },
+  { id: "28", name: "Rizky Aditya Putra Pratama", search: "rizky aditya putra pratama", avatar: '<div class="avatar"></div>', role: "Anggota", quote: "-", hobby: "-", about: "-" },
+  { id: "29", name: "Sahrul Zamzamana Fahmi", search: "sahrul zamzamana fahmi", avatar: '<div class="avatar"></div>', role: "Anggota", quote: "-", hobby: "-", about: "-" },
+  { id: "30", name: "Tita Kurnia Sari", search: "tita kurnia sari", avatar: '<div class="avatar"></div>', role: "Bendahara", quote: "-", hobby: "-", about: "-" },
+  { id: "31", name: "Ulung Dwi Pertiwi", search: "ulung dwi pertiwi", avatar: '<div class="avatar"></div>', role: "Bendahara", quote: "-", hobby: "-", about: "-" },
+  { id: "32", name: "Wildan Ahmad Robbany", search: "wildan ahmad robbany", avatar: '<div class="avatar"></div>', role: "Anggota", quote: "-", hobby: "-", about: "-" },
+  { id: "33", name: "Zahrotus Shita", search: "zahrotus shita", avatar: '<div class="avatar"></div>', role: "Anggota", quote: "-", hobby: "-", about: "-" }
 ];
 
 
@@ -46,7 +45,7 @@ const noResults = document.getElementById('noResults');
 
 function renderCards(data) {
   carousel.innerHTML = data.map(siswa => `
-    <div class="card" data-name="${siswa.search}" data-hobby="${siswa.hobby}" data-about="${siswa.about}">
+    <div class="card" data-id="${siswa.id}" data-name="${siswa.search}" data-hobby="${siswa.hobby}" data-about="${siswa.about}" role="button" tabindex="0" aria-label="Lihat profil ${siswa.name}">
       <span class="student-number">#${siswa.id}</span>
       ${siswa.avatar}
       <span class="badge">${siswa.role}</span>
@@ -200,23 +199,32 @@ const detailHobby = document.getElementById("studentDetailHobby");
 const detailAbout = document.getElementById("studentDetailAbout");
 
 
-carousel.addEventListener("click", function (event) {
-  const card = event.target.closest(".card");
+function bukaProfil(card) {
   if (!card) return;
 
   detailName.textContent = card.querySelector("h2")?.textContent.trim() || "Nama Siswa";
-  detailRole.textContent = card.querySelector(".badge")?.textContent.trim() || "Member";
+  detailRole.textContent = card.querySelector(".badge")?.textContent.trim() || "Anggota";
   detailQuote.textContent = card.querySelector("blockquote")?.textContent.trim() || "-";
-  detailHobby.textContent = card.dataset.hobby || "-";
-  detailAbout.textContent = card.dataset.about || "-";
+  detailHobby.textContent = card.dataset.hobby && card.dataset.hobby !== "-" ? card.dataset.hobby : "-";
+  detailAbout.textContent = card.dataset.about && card.dataset.about !== "-" ? card.dataset.about : "-";
 
   const avatar = card.querySelector(".avatar");
-  if (avatar) {
-    detailAvatar.innerHTML = avatar.innerHTML;
-  }
+  if (avatar) detailAvatar.innerHTML = avatar.innerHTML;
 
   overlay.classList.add("show");
   document.body.style.overflow = "hidden";
+  closeButton.focus();
+}
+
+carousel.addEventListener("click", function (event) {
+  bukaProfil(event.target.closest(".card"));
+});
+
+carousel.addEventListener("keydown", function (event) {
+  const card = event.target.closest(".card");
+  if (!card || (event.key !== "Enter" && event.key !== " ")) return;
+  event.preventDefault();
+  bukaProfil(card);
 });
 
 closeButton.addEventListener("click", () => {
