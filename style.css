@@ -997,3 +997,93 @@ body.light-theme .logo {
   font-style: italic;
 }
 
+
+
+/* Penyesuaian tipografi: lebih ringkas, terutama di layar HP */
+header h1 {
+  font-size: clamp(2.1rem, 8vw, 3.8rem);
+}
+
+header p {
+  font-size: .82rem;
+  line-height: 1.5;
+}
+
+.quick-nav a {
+  font-size: .74rem;
+  padding: 7px 10px;
+}
+
+.section-title,
+.carousel-heading h2,
+#jadwal > h2 {
+  font-size: 1.2rem;
+}
+
+.vm-block p,
+.vm-block li {
+  font-size: .88rem;
+  line-height: 1.6;
+}
+
+.wk-info h2 {
+  font-size: 1.05rem;
+}
+
+.carousel-heading p {
+  font-size: .72rem;
+}
+
+.card h2 {
+  font-size: .98rem;
+}
+
+.hari-selector select {
+  font-size: .8rem;
+}
+
+.jadwal-info h3 {
+  font-size: .92rem;
+}
+
+.jadwal-row {
+  font-size: .7rem;
+}
+
+.jadwal-row strong {
+  font-size: .72rem;
+}
+
+@media (max-width: 600px) {
+  header h1 {
+    font-size: clamp(2rem, 8vw, 2.8rem);
+  }
+
+  .quick-nav a {
+    font-size: .7rem;
+    padding: 7px 9px;
+  }
+
+  .section-title,
+  .carousel-heading h2,
+  #jadwal > h2 {
+    font-size: 1.12rem;
+  }
+
+  .vm-block p,
+  .vm-block li {
+    font-size: .84rem;
+  }
+
+  .card h2 {
+    font-size: .94rem;
+  }
+
+  .jadwal-row {
+    font-size: .63rem;
+  }
+
+  .jadwal-row strong {
+    font-size: .66rem;
+  }
+}
